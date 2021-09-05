@@ -1,11 +1,11 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
-import Features from './components/Features';
 import Footer from './components/Footer';
 import { Container, VStack } from '@chakra-ui/react';
 import Comparison from './components/Comparison';
+import Overall from './components/Overall';
+import EarlyAccess from './components/EarlyAccess';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <NavBar />
       <VStack spacing={4} margin="30px 0">
         <Hero />
+        <Overall />
         <Comparison />
-        <Features />
-        <Stats />
+        <EarlyAccess />
       </VStack>
       <Container padding="30px"></Container>
       <Footer />
