@@ -18,7 +18,18 @@ const EarlyAccess = () => {
         <Text fontSize="xl" color="#fefefe">
           Get early access to our latest product!
         </Text>
-        <Button _hover={{bg: 'green.500'}} bgColor="green.400" color="whiteAlpha.900" size="lg" marginTop="40px">Get Started</Button>
+        <Button
+          fontWeight="700"
+          as="a"
+          href={'mailto:info@blitzscaling.io'}
+          _hover={{ bg: 'green.500' }}
+          bgColor="green.400"
+          color="whiteAlpha.900"
+          size="lg"
+          marginTop="40px"
+        >
+          Get Early Access
+        </Button>
       </Box>
     </Box>
   );

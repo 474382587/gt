@@ -17,7 +17,7 @@ const Hero = () => {
         rel="stylesheet"
       />
 
-      <Container maxW={'3xl'}>
+      <Container maxW={'6xl'} id="home">
         <Stack
           as={Box}
           textAlign={'center'}
@@ -26,7 +26,7 @@ const Hero = () => {
         >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '5xl' }}
+            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
           >
             One-stop modern{' '}
@@ -43,9 +43,8 @@ const Hero = () => {
               data-driven
             </Text> */}
           </Heading>
-          <Text fontWeight="500" color={'gray.500'} fontSize="sm">
-            WITH BLITZSCALING, YOU GET OUT OF THE BOX, END TO END DATA PLATFORM
-            BUILT AND MAINTAINED BY DATA EXPERTS FROM UBER.
+          <Text fontWeight="500" color={'gray.500'} fontSize="lg">
+            Deploy your end-to-end modern data platform with just a few clicks.
           </Text>
           <Stack
             direction={'column'}
@@ -55,15 +54,18 @@ const Hero = () => {
             position={'relative'}
           >
             <Button
-              colorScheme={'green'}
+              as="a"
+              display={{ base: 'none', md: 'inline-flex' }}
+              fontSize={'sm'}
+              fontWeight={700}
+              color={'white'}
               bg={'green.400'}
-              rounded={'full'}
-              px={6}
+              href={'mailto:info@blitzscaling.io'}
               _hover={{
-                bg: 'green.500',
+                bg: 'green.300',
               }}
             >
-              Get Started
+              Get Early Access
             </Button>
             {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Schedule a demo with us today!

@@ -55,7 +55,11 @@ const NavBar = () => {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} alignItems='center'>
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: 'center', md: 'start' }}
+          alignItems="center"
+        >
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
@@ -85,17 +89,18 @@ const NavBar = () => {
             Sign In
           </Button> */}
           <Button
+            as="a"
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
-            fontWeight={600}
+            fontWeight={700}
             color={'white'}
             bg={'green.400'}
-            href={'#'}
+            href={'mailto:info@blitzscaling.io'}
             _hover={{
               bg: 'green.300',
             }}
           >
-            Get Started
+            Get Early Access
           </Button>
         </Stack>
       </Flex>
@@ -300,15 +305,15 @@ const NAV_ITEMS: Array<NavItem> = [
   // },
   {
     label: 'Home',
-    href: '#',
+    href: '#home',
   },
   {
     label: 'Solution',
-    href: '#',
+    href: '#solution',
   },
   {
     label: 'Features',
-    href: '#',
+    href: '#features',
   },
 ];
 
